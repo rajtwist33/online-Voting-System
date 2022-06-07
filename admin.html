@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+        
+        .btn {
+            margin-left: 2%;
+            margin-top: 3%;
+        }
+    </style>
+    <link href="signin.css" rel="stylesheet">
+</head>
+
+<body class="bg-info">
+    <div class="col">
+
+        <div class="col-sm-8 ">
+
+            <form action="candidate/candidate.html">
+
+                <button class=" btn w-30 btn btn-lg btn-danger" type="submit" style="margin-bottom: 5px; margin-top:5px;">Candidate Panal </button>
+            </form>
+        </div>
+        <hr>
+        <main class="form-signin col-sm-6" style="background-color: khaki;">
+            <form action="admin.php" method="post">
+                <center>
+                    <img class="d-block mx-auto mb-4" src="image/admin.png" alt="" width="100" height="100">
+                    <h1 class="h3 mb-3 fw-normal" style="font-family: Verdana, Geneva, Tahoma, sans-serif;font-weight: bolder;">Admin</h1>
+                </center>
+                <div class="form-floating">
+                    <input type="text" class="form-control" name="userid" placeholder="admin user id" required>
+                    <label for="floatingInput">User ID </label>
+                </div><br>
+
+                <div class="form-floating">
+                    <input type="password" class="form-control" name="password" placeholder="admin password" required>
+                    <label for="floatingInput">Password </label>
+                </div><br>
+                <center>
+                    <button class="w-20 btn btn-lg btn-primary" type="submit">Log In</button>
+                    <button class="w-20 btn btn-lg btn-secondary" type="reset">reset</button>
+                </center>
+            </form><br>
+            <a href="admin_register.html">
+                <button class="w-100 btn btn-lg btn-danger" type="submit">Register</button>
+            </a>
+        </main>
+        <br>
+    </div>
+</body>
+
+</html>

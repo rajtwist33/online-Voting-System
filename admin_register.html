@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+  
+      </style>
+        <link href="signin.css" rel="stylesheet">
+</head>
+
+<body class="bg-secondary">
+    <div class="col-12">
+    
+        <main class="form-signin col-sm-6" style="background-color: khaki;">
+        <form action="admin_register.php" method="post" >
+            <center>
+               
+        <img class="d-block mx-auto mb-4 img-circle" src="image/admin.png" alt="" width="100" height="100">
+                
+        <h1 class="h3 mb-3 fw-normal" style="font-family: Verdana, Geneva, Tahoma, sans-serif;font-weight: bolder;" >Admin Registration</h1></center>
+            <div class="form-floating">
+                <input type="text" class="form-control" name="userid"  placeholder="admin user id" required>
+                <label for="floatingInput">User ID </label>
+              </div><br>
+
+              <div class="form-floating">
+                <input type="password" class="form-control" name="password"  placeholder="Password" required>
+                <label for="floatingInput">Password </label>
+              </div><br> 
+              <div class="form-floating">
+                <input type="password" class="form-control" name="conf_password"  placeholder="Confirm password" required>
+                <label for="floatingInput">Conform Password </label>
+              </div><br>
+              <button class="w-100 btn btn-lg btn-success" type="submit">Register</button><br><br>
+              <button class="w-100 btn btn-lg btn-warning" type="reset">Erase </button>
+             
+                    
+        </form><br>
+        
+        </main>
+        </div>    
+</body>
+</html>
